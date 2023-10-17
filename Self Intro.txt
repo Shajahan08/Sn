@@ -1,0 +1,33 @@
+Self Intro
+• I am Shajahan S.
+• Currently I am working in Prog Laps Solutions as software Analyst.
+• I have 3 years’ experience in software developing. i have 1.3years experiance front-end developer
+and 1.7 years in java developer overall i have 3 years experiance 
+
+
+
+• As software developer, I have a proficiency in java, with a good understanding of its
+ecosystems.
+
+• Sound knowledge of object-oriented programming concepts.
+• I have knowledge in developing the web-based interfaces using HTML, JSP.
+• I have knowledge in debugging, writing test cases.
+• I have worked in Educational Management based project.
+
+Roles and Responsibilities
+• My responsibilities is to gathering requirements for developing application.
+• Develop efficient, clean code based on needs.
+• Fixing and improving existing software.
+• Develop new features in collaboration with manger/lead and frontend teams.
+• Keep small changes and iterate towards the best solution.
+• Create technical documentation for reference and reporting.
+
+
+Day to Day Activities
+• Test driven development. Writing and testing code.
+• Collaborating with other developers to understand project requirements.
+• Debugging issues that arise.
+• Participating in code reviews and status call.
+• Then I have scrum meeting where we will discuss the previous day task, and what are we
+planning for today.
+• After that I will check the mail, if there is any important mail, I need to take action for it.

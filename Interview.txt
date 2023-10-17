@@ -1,0 +1,551 @@
+
+Self Intro
+• I am Shajahan S.
+• Currently I am working in Prog Laps Solutions as software developer.
+• I have 3 years’ experience in software developing.
+
+• As software developer, I have a proficiency in java, with a good understanding of its
+ecosystems.
+
+• Sound knowledge of object-oriented programming concepts.
+• I have knowledge in developing the web-based interfaces using HTML, JSP.
+• I have knowledge in debugging, writing test cases.
+• I have worked in Educational Management based project.
+Roles and Responsibilities
+
+• My responsibilities is to gathering requirements for developing application.
+• Develop efficient, clean code based on needs.
+• Fixing and improving existing software.
+• Develop new features in collaboration with manger/lead and frontend teams.
+• Keep small changes and iterate towards the best solution.
+• Create technical documentation for reference and reporting.
+
+Day to Day Activities
+• Test driven development. Writing and testing code.
+• Collaborating with other developers to understand project requirements.
+• Debugging issues that arise.
+• Participating in code reviews and status call.
+• Then I have scrum meeting where we will discuss the previous day task, and what are we
+planning for today.
+• After that I will check the mail, if there is any important mail, I need to take action for it.
+
+TITLE Admit Kard:
+About
+I’m working on a project based on educational domain. Admit Kard is our own
+product end users of this application were educational institutions like schools
+and colleges. This application is developed for managing educational institutions.
+application will be in two versions one is for schools and second is for colleges.
+Our application has many modules like teacher login, students login and office staff
+login.. Almost 90 percentage of the features are same in the application, we will
+add new features in it based upon client requirements. we have used springboot
+framework, Sql database, rest api. Front end view page is developed using jsp.
+Tools used in this project were Eclipse, postman, mysql, spring data jpa, jwt.
+
+YOUR ROLE:
+For the past  1 year I have been working on attendance management using
+biometric device using third party API camsunit. I have to consume the data using
+restful webservice. In this we have added a feature like messaging system.
+Message will be sent to their parents if a student is absent. In this we will read the
+attendance information and calculates the time. In the attendance if there is no
+entry for that time period, from that data will be scheduled, scheduling will be
+done using lightstreamer. And we have added another feature which is weekly
+report generation, notes provided by staffs for students will be updated weekly,
+the students can view the notes and they can download it. They can ask their
+questions and comments on it. Whenever a request came from UI, it hits the
+corresponding method in the controller, from there it goes to the service layer
+where all the business logic will be executed and data will be returned from the dao layer. How to integrate biometric device in your application?
+Biometric devices placed at any location are connected to the CAMS
+Protocol Engine through internet. Protocol Engine is hosted at CAMS Data Server.
+Lite version of Protocol Engine can also be hosted at our server. This engine is
+responsible for receiving, managing, and sending data to the Cloud systems and
+the biometric device. Engine maintains the attendance data only when the cloud
+server or the biometric device is not reachable or failed to respond. As soon as
+adjacent systems are start running, then the respective data would be wiped out.
+
+
+
+Project Real time Questions
+
+
+
+Project Details: Educational domain
+Purpose:The Educational Domain project aimed to provide an online platform for 
+managing teacher attendance, timetables, pay slips, and database management.
+
+
+Scope:The scope of the project was to design and develop the back-end business logic 
+for the platform. This would have included tasks such as designing the database schema,
+creating RESTful web services, and building the necessary Java classes and methods 
+to support these features.
+
+
+Technologies used: The project was developed using Java and Spring Boot, which are popular and powerful technologies for developing enterprise-grade applications. 
+Additionally, the project may have used other tools and technologies 
+such as JSP, JPA, Hibernate, and other open-source libraries to build the 
+necessary functionalities.
+
+
+
+
+
+Can you explain the architecture of your Spring Boot application?-
+
+    Presentation Layer: This is the top layer of the application, which handles user
+	requests and responses. In a Spring Boot application, the presentation layer is
+	typically implemented using controllers or RESTful endpoints.
+
+    Service Layer: This layer contains the business logic of the application. It 
+	includes services, which encapsulate the application logic and interact with 
+	the data access layer to perform CRUD (Create, Read, Update, and Delete) operations.
+
+Data Access Layer: This layer is responsible for handling the storage and
+retrieval of data from the database. It typically includes repositories or
+DAOs (Data Access Objects) that abstract the underlying database and provide 
+a simple interface for the service layer to interact with.
+
+Database Layer: This is the bottom layer of the application, which handles
+the actual storage and retrieval of data. It can be implemented using various
+database technologies, such as MySQL, PostgreSQL, or MongoDB.
+
+In a Spring Boot application, these layers are typically organized using the 
+Model-View-Controller (MVC) design pattern. The presentation layer (controllers) 
+handles user requests and responses, the service layer contains the business logic, 
+and the data access layer handles data persistence.
+
+The advantage of this layered architecture is that it helps keep the application 
+organized, maintainable, and scalable. By separating concerns into different 
+layers, it becomes easier to make changes to specific parts of the application 
+without affecting other parts.
+
+
+How did you implement security features in your Spring Boot application to protect 
+sensitive data?
+
+To implement security features in a Spring Boot application, I used Spring Security, 
+which is a powerful and customizable framework for securing applications. 
+I implemented various security features to protect sensitive data, including:
+
+Authentication: I used Spring Security's authentication mechanisms to verify the
+ identity of users before granting them access to the application. This involved 
+ implementing a login page and configuring Spring Security to use a secure password 
+ storage mechanism like BCrypt.
+
+Authorization: I used Spring Security's authorization mechanisms to control 
+access to different parts of the application based on the user's role or permissionlevel. 
+This involved defining access control rules using Spring Security's configuration options.
+
+HTTPS: I configured the application to use HTTPS (HTTP Secure) to encrypt data in 
+transit and prevent eavesdropping or tampering. This involved obtaining an SSL 
+certificate and configuring the application server to use it.
+
+    Cross-Site Scripting (XSS) protection: I implemented XSS protection in the 
+	application to prevent malicious code injection attacks. This involved 
+	configuring Spring Security to sanitize input and output and using libraries
+	like sonar qube.
+
+Input validation: I implemented input validation to prevent malicious input that could lead to security vulnerabilities like SQL injection or cross-site scripting attacks. This involved using Spring Validation or third-party libraries like Hibernate Validator.
+
+By implementing these security features, I was able to protect sensitive data in
+the Spring Boot application from unauthorized access and malicious attacks.
+
+
+
+How did you handle database operations in your Spring Boot application? 
+Which ORM framework did you use?
+
+In my Spring Boot application for the educational domain, I used the Spring Data JPA
+framework to handle database operations. Spring Data JPA is an abstraction on top 
+of the Java Persistence API (JPA) and provides a simplified and consistent programming 
+model for accessing and persisting data in databases.
+
+To use Spring Data JPA, I first defined the data model for my application using 
+entity classes annotated with JPA annotations, such as @Entity and @OneToMany. Then,
+I defined repositories that extended the JpaRepository interface provided by Spring 
+Data JPA. These repositories provided methods for CRUD operations, such as findById(), 
+findAll(), save(), and delete().
+
+To configure the database connection and other database-related properties,
+I used the application.properties file in the resources folder of my Spring
+Boot project. In this file, I specified the database URL, username, password,
+and other settings.
+
+In terms of database security, I used Spring Security to implement role-based 
+access control and authentication for my application. This allowed me to restrict
+access to certain parts of the application based on user roles and credentials. 
+Additionally, I implemented encryption for sensitive data such as passwords using 
+Spring Security features like PasswordEncoder.
+
+
+I used Spring Data JPA as the ORM (Object-Relational Mapping) framework in my Spring 
+Boot application for the educational domain. Spring Data JPA is a powerful and convenient
+ framework that provides an abstraction on top of the Java Persistence API (JPA) and makes it easier to work with relational databases in Java applications.
+
+With Spring Data JPA, I was able to define the data model for my application using
+entity classes annotated with JPA annotations, such as @Entity, @Table, @Column,
+@OneToMany, @ManyToOne, and so on. These annotations allowed me to map Java objects 
+to database tables, columns, and relationships.
+
+I also used the JpaRepository interface provided by Spring Data JPA to define 
+repositories that provided methods for CRUD (Create, Read, Update, Delete) 
+operations on the database. These methods were implemented automatically by Spring 
+Data JPA based on the naming conventions and data types of the methods.
+
+Overall, Spring Data JPA made it easier for me to work with databases in my 
+Spring Boot application by providing a convenient and powerful abstraction layer
+ on top of JPA.
+
+
+
+Can you explain the role of the service layer in your Spring Boot application?
+
+Certainly! The service layer in a Spring Boot application typically contains the 
+business logic of the application. This layer serves as an intermediary between
+the presentation layer (the controller) and the data access layer 
+(the repository or DAO). The service layer is responsible for performing
+various operations on the data, such as data validation, transformation, 
+ and manipulation.
+
+The service layer often consists of multiple services, each of which is 
+responsible for a specific set of related operations. These services communicate 
+with the data access layer to perform CRUD (Create, Read, Update, and Delete) 
+operations on the database.
+
+The main benefits of having a service layer in a Spring Boot application are:
+
+Separation of concerns: The service layer separates the business logic from the
+presentation layer, making the code more modular and easier to maintain.
+
+  Reusability: The services can be reused across multiple controllers or 
+  other parts of the application.
+
+ Testability: The service layer can be easily tested in isolation, without the              need to interact with the database or the presentation layer.
+
+Overall, the service layer plays a crucial role in ensuring that the business logic 
+of the application is organized and structured in a way that is efficient, maintainable,
+ and scalable.
+
+
+How did you handle the integration of third-party APIs in your Spring Boot application?
+
+integrating third-party APIs in a Spring Boot application involves the use of RESTful web services. 
+The following are the steps that can be taken to handle the integration of third-party APIs:
+
+    Define the REST client: Spring Boot provides a framework to define REST clients using 
+	the RestTemplate class or WebClient.
+
+    Configure the REST client: The REST client can be configured with options such as 
+	timeouts, interceptors, and error handling.
+
+    Define the API endpoint: The API endpoint can be defined as a URL and can include
+	any necessary query parameters or headers.
+
+    Invoke the API: The REST client can be used to invoke the API endpoint 
+	with the necessary parameters and request body.
+
+    Process the response: The response from the API can be processed using the 
+	appropriate data structures and error handling mechanisms.
+
+    Map the response to the application domain model: The response from the API 
+	can be mapped to the application domain model using object mapping frameworks
+	such as Jackson or Gson.
+
+By following these steps, third-party APIs can be integrated into a Spring 
+Boot application seamlessly.
+
+
+
+
+How did you implement pagination and sorting in your Spring Boot application?
+
+Define a method in your repository that returns a Page of TeacherAttendance entities:
+
+public interface TeacherAttendanceRepository extends JpaRepository<TeacherAttendance, Long> {
+    Page<TeacherAttendance> findAll(Pageable pageable);
+}
+
+
+
+
+How did you handle exceptions and errors in your Spring Boot application?
+
+
+
+    Use Spring Boot's built-in exception handling: Spring Boot provides a robust exception handling mechanism out of the box. You can define exception handlers that can catch and handle various types of exceptions, such as invalid user input, database errors, or network issues.
+
+    Use custom exception classes: You can create your own exception classes that represent specific types of errors in your application. For example, you might create a StudentNotFoundException class that represents an error when a student is not found in the database. You can then define exception handlers that catch and handle these custom exception classes.
+
+    Use logging: You can use logging to record errors and exceptions that occur in your application. Spring Boot includes the Logback framework for logging, which allows you to configure different logging levels and output formats. By logging errors and exceptions, you can quickly identify and diagnose issues in your application.
+
+    Use error pages: You can define custom error pages that are displayed to users when an error occurs. For example, you might create an error page that provides a friendly message to users when they encounter a 404 error (page not found). You can configure Spring Boot to use these error pages for specific types of errors.
+
+Overall, handling exceptions and errors in a Spring Boot application is crucial for ensuring that your application is robust and user-friendly. By using these strategies, you can improve the reliability and usability of your application.
+
+
+
+SQL injection is a common vulnerability in web applications that allow attackers to execute malicious SQL statements by manipulating user input.
+
+To prevent SQL injection errors in your Spring Boot application, you can take the following measures:
+
+    Use parameterized queries: Parameterized queries allow you to pass user input as parameters rather than embedding them directly into the SQL statement. This prevents attackers from injecting malicious code into the SQL statement. Spring Boot's JdbcTemplate and Hibernate both support parameterized queries.
+
+    Sanitize user input: You can sanitize user input by removing or escaping any characters that could be used to inject malicious code. For example, you might remove or escape single quotes, double quotes, semicolons, and other characters that could be used to terminate a SQL statement and inject new code.
+
+    Use an Object-Relational Mapping (ORM) tool: ORM tools like Hibernate allow you to interact with the database using object-oriented code rather than SQL statements. This can make it easier to write secure code since you don't have to worry about SQL injection vulnerabilities.
+
+    Limit privileges: You can limit the privileges of the database user that your Spring Boot application uses to connect to the database. For example, you might limit the user to read-only access or restrict access to certain tables.
+
+Overall, preventing SQL injection requires a combination of secure coding practices, parameterized queries, and proper user input validation. By taking these measures, you can reduce the risk of SQL injection vulnerabilities in your Spring Boot application.
+
+
+
+Can you walk me through the process of deploying your Spring Boot application 
+to a production server?
+
+
+    Prepare the server environment: You will need to set up a server environment with the necessary software and libraries to run your Spring Boot application. This may include installing a web server like Apache or Nginx, a Java runtime environment (JRE), and any other dependencies required by your application.
+
+    Package your application: You will need to package your Spring Boot application into an executable JAR file or a WAR file. To create a JAR file, you can use the "mvn package" command in your terminal or IDE. This will generate a JAR file in the "target" folder of your project.
+
+    Configure your application: You will need to configure your Spring Boot application for production by specifying settings such as database connections, server ports, and security settings. You can do this by creating a "application-prod.properties" file in the "src/main/resources" folder of your project.
+
+    Deploy your application: You can deploy your packaged application to the server using tools such as scp or FTP. Once your application is on the server, you can start it by running the "java -jar" command followed by the name of your JAR file.
+
+Set up a process manager: You can set up a process manager like Systemd or Upstart to manage your application process and ensure that it starts automatically when the server boots up.
+
+Configure a web server: Finally, you will need to configure a web server like Apache or Nginx to act as a reverse proxy for your Spring Boot application. This will allow you to serve your application over the standard HTTP or HTTPS ports and provide additional security features like SSL encryption.
+
+Overall, deploying a Spring Boot application to a production server requires careful planning and attention to detail. By following these steps and ensuring that your application is properly configured and secured, you can ensure that your application is reliable and performant in a production environment.
+
+
+
+GitLab is a popular code hosting platform that provides features such as version control, issue tracking, and continuous integration/continuous deployment (CI/CD) pipelines. Here's a general overview of how to deploy a Spring Boot application using GitLab:
+
+Set up a GitLab project: First, you will need to create a GitLab project to host your Spring Boot application. You can create a new project from the GitLab dashboard, and then clone the project to your local machine using the Git command line or a Git client like Sourcetree.
+
+Add your Spring Boot application to the project: Once you have cloned the GitLab project to your local machine, you can add your Spring Boot application files to the project. This can be done by copying your Spring Boot application source code to the project directory on your local machine.
+
+Configure GitLab CI/CD: GitLab provides a built-in CI/CD pipeline that can be used to build, test, and deploy your Spring Boot application. To configure the pipeline, you will need to create a ".gitlab-ci.yml" file in the root directory of your GitLab project. This file defines the stages of the pipeline, such as build, test, and deploy, and specifies the commands to run at each stage.
+
+ Push changes to GitLab: Once you have configured the pipeline, you can push your changes to the GitLab repository using the Git command line or a Git client like Sourcetree. This will trigger the pipeline and run the defined stages.
+
+ Review and monitor the pipeline: You can monitor the progress of the pipeline from the GitLab dashboard. The pipeline will show the status of each stage and any errors or warnings that occur. You can review the output of each stage and make any necessary changes to your code or pipeline configuration.
+
+Deploy your application: Once the pipeline has completed successfully, your Spring Boot application will be deployed to your production environment. Depending on your pipeline configuration, this may involve deploying to a server, a cloud platform like AWS or Google Cloud, or a containerization platform like Docker.
+
+Overall, deploying a Spring Boot application using GitLab requires configuring a GitLab CI/CD pipeline and monitoring the pipeline to ensure that it runs smoothly. By following these steps and testing your pipeline thoroughly, you can ensure that your Spring Boot application is deployed reliably and consistently.
+
+
+image: maven:3.6.3-jdk-11
+
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  script:
+    - mvn clean package
+
+test:
+  stage: test
+  script:
+    - mvn test
+
+deploy:
+  stage: deploy
+  script:
+    - mvn deploy
+  only:
+    - master
+
+
+This configuration file defines three stages: "build", "test", and "deploy". The "build" stage compiles the Spring Boot application using Maven, the "test" stage runs any unit tests, and the "deploy" stage deploys the application.
+
+The "deploy" stage is configured to only run on the "master" branch, so any changes made to other branches will not trigger a deployment.
+
+To use this configuration file, you would need to save it as ".gitlab-ci.yml" in the root directory of your GitLab project. You can then push your changes to the repository and the pipeline will be triggered automatically.
+
+Note that this is just a sample configuration file and you may need to modify it to fit your specific deployment requirements.
+
+
+How did you ensure the scalability and performance of your Spring Boot application?
+
+Ensuring scalability and performance is an important aspect of building a Spring Boot application, especially if it is expected to handle a large amount of traffic or users. Here are some ways to ensure the scalability and performance of a Spring Boot application:
+
+    Use caching: Implementing caching mechanisms like Spring Cache can help reduce the load on the application by storing frequently accessed data in memory.
+
+    Optimize database queries: Poorly optimized database queries can have a significant impact on the performance of an application. Using an Object-Relational Mapping (ORM) framework like Hibernate and optimizing SQL queries can help improve the performance of the database layer.
+
+    Use connection pooling: Creating new database connections for each request can be expensive. Using a connection pooling library like HikariCP can help improve the performance of the database layer by reusing existing connections.
+
+    Use asynchronous programming: Spring Boot supports asynchronous programming using technologies like Reactive Streams and CompletableFuture. Using asynchronous programming can help improve the performance of the application by allowing it to handle more requests at once.
+
+    Horizontal scaling: Horizontal scaling involves adding more instances of the application to handle an increase in traffic. Containerization technologies like Docker and container orchestration platforms like Kubernetes can help manage and scale multiple instances of an application.
+
+    Performance testing: It is important to test the application's performance to identify any bottlenecks and optimize the code accordingly. Tools like JMeter and Gatling can be used to simulate heavy traffic and identify performance issues.
+
+Overall, ensuring scalability and performance requires a combination of architectural decisions, code optimizations, and thorough testing. By following these best practices, you can ensure that your Spring Boot application can handle a large number of users and maintain high performance.
+
+
+
+
+
+Can you give an example of a particularly challenging issue you faced while developing 
+your Spring Boot application and how you solved it
+
+
+
+The application required authentication and authorization for different user roles, and I needed to ensure that sensitive data was protected and that the application was secure from attacks like cross-site scripting (XSS) and SQL injection.
+
+To address these issues, I implemented several security measures, including:
+
+    Using Spring Security: I used Spring Security to implement authentication and authorization, including securing endpoints based on user roles and protecting sensitive data with encryption.
+
+    Validating user input: I used server-side validation to prevent common attacks like SQL injection and XSS by validating user input and sanitizing data.
+
+    Implementing HTTPS: I configured the application to use HTTPS to encrypt traffic between the server and the client, which helps protect against man-in-the-middle attacks.
+
+    Regularly updating dependencies: I kept the application's dependencies up to date to ensure that security vulnerabilities were patched promptly.
+
+    Using security testing tools: I used security testing tools like OWASP ZAP and SonarQube to scan the application for potential security vulnerabilities.
+
+By implementing these security measures, I was able to ensure that the application was secure and protected against common security threats, which is especially important when dealing with sensitive data.
+
+
+
+
+
+Hibernate is an open-source Java-based Object Relational Mapping (ORM) framework that provides a way to map Java classes to relational database tables and vice versa. It simplifies the development of Java applications that need to interact with a database by abstracting away the complexities of dealing with SQL and database schema.
+
+Hibernate provides a number of benefits, including:
+
+    Object-relational mapping: Hibernate allows you to work with Java objects instead of SQL statements. It maps Java classes to database tables, and Java objects to database rows.
+
+    Database independence: Hibernate provides a layer of abstraction between your application and the database, making it easier to switch between different database providers.
+
+    Automatic schema generation: Hibernate can automatically generate database schema based on your Java classes and annotations.
+
+    Lazy loading: Hibernate supports lazy loading, which allows you to load only the data that you need from the database.
+
+    Caching: Hibernate provides a caching mechanism that can improve the performance of your application by reducing the number of database queries.
+
+
+Role and contributions: As a Java developer on the project, your role may have involved 
+designing and implementing the back-end functionality, writing server-side validation, 
+and processing user input. You would have also worked closely with the front-end 
+developers to ensure that the platform provided a seamless and responsive user experience.
+
+
+
+Challenges and obstacles: While working on the project, you may have faced various 
+challenges or obstacles, such as integrating third-party APIs, performance issues, 
+or debugging code. You could talk about how you addressed these issues by 
+troubleshooting the code, testing for errors, and collaborating with other 
+team members to identify and resolve the root cause of the problem.
+
+
+Integrating third-party APIs: If you were integrating third-party APIs into the project, 
+you may have faced challenges such as understanding the API documentation, 
+dealing with compatibility issues, and handling errors. 
+To address these issues, you may have conducted extensive research on the API, 
+worked with the vendor to resolve compatibility issues, and implemented 
+error handling code to prevent issues from affecting the overall 
+functionality of the system.
+
+
+
+Performance issues: Performance issues can arise in any software project, and your project
+may have been no exception. To address these issues, you may have conducted load testing 
+and performance testing, analyzed performance metrics to identify bottlenecks, optimized 
+database queries and network communications, and implemented caching strategies 
+to improve response times.
+
+
+Debugging code: Debugging code is an important part of software development, 
+and you may have spent a significant amount of time debugging code during the project.
+To address these issues, you may have used a variety of debugging tools and techniques, 
+such as printing debug statements to the console, using a debugger to step through code,
+analyzing error logs, and collaborating with other team members to identify and 
+resolve issues.
+
+
+
+Collaborating with team members: Collaboration is an essential part of any software 
+development project, and you may have faced challenges such as communication breakdowns, conflicting opinions, and misaligned priorities. To address these issues, you may have held regular team meetings, used project management tools to track progress and priorities, encouraged open and honest communication, and worked to resolve conflicts in a professional and productive manner.
+
+
+Outcome and benefits: The outcome of the project was a functional, user-friendly online 
+platform that provided teachers with tools to manage attendance, timetables, pay slips, and database management. The platform may have allowed teachers 
+to view their schedules, record attendance, access pay information, and manage 
+student records. You can talk about how the platform met its objectives and 
+provided value to its users by improving efficiency and organization in 
+educational environments.
+
+
+
+
+User authentication: Implement a user authentication system that allows users 
+(i.e. teachers, staff, or students) to log in and access specific features based 
+on their user role.
+
+Attendance management: Create a feature that allows teachers to take attendance and
+track student absences and tardiness. You could also include a reporting feature 
+that provides attendance statistics for specific classes or time periods.
+
+Timetable management: Allow teachers and staff to manage and view class schedules,
+including class times, locations, and course information.
+
+Payroll management: Implement a feature that allows staff and teachers to view 
+and manage their pay and tax information.
+
+Student record management: Allow staff and teachers to manage and view student 
+records, including attendance records, grades, and personal information.
+
+Communication: Create a messaging or announcement system that allows teachers and 
+staff to communicate with each other and with students.
+
+Database management: Implement a feature that allows administrators to manage and 
+maintain the application's database.
+
+
+
+
+The three layers are:
+	
+Presentation layer: This layer is responsible for handling the user interface and
+presenting information to the user. In a web application, this layer would include 
+the user interface elements such as JSP pages or HTML templates, as well as the 
+controllers responsible for handling incoming requests and generating responses.
+
+Service layer: This layer contains the business logic of the application. It includes 
+services, which encapsulate the application logic and interact with the data access 
+layer to perform CRUD (Create, Read, Update, and Delete) operations.
+
+Data access layer: This layer is responsible for handling the storage and retrieval 
+of data from the database. It typically includes repositories or DAOs 
+(Data Access Objects) that abstract the underlying database and provide a 
+simple interface for the service layer to interact with.
+
+
+
+Typically, each operation or functionality is encapsulated within a service, 
+which is a Java class that provides methods for performing specific tasks. 
+These services interact with the data access layer to perform CRUD operations 
+(Create, Read, Update, and Delete) on the underlying data.
+
+For example, if you have a web application that allows teachers to manage student records,
+you could have a service called "StudentService" that encapsulates the logic for 
+performing operations on student data, such as adding a new student, updating student
+information, or retrieving a list of students. This service would interact with the
+data access layer (e.g. a repository or DAO) to perform these operations on the 
+underlying database.
+
+By separating the business logic into services, you can keep your code modular and
+ reusable. It also makes it easier to test your code, as you can test each 
+ service separately to ensure that it behaves as expected.
+
+
+
+
+
